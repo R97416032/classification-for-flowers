@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7adfb8"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"/>
+    <include
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        layout="@layout/input_layout" />
+    <include
+        android:id="@+id/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        layout="@layout/layout_progress"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:gravity="center|center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/main_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:onClick="login"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="2dip"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:paddingStart="15dip"
+                android:paddingEnd="15dip" />
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px" />
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/main_btn_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:onClick="sign"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="2dip"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:paddingStart="15dip"
+                android:paddingEnd="15dip" />
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/main_btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:onClick="update"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="2dip"
+                android:text="修改"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:paddingEnd="15dip"
+                android:paddingStart="15dip" />
+
+            <View
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

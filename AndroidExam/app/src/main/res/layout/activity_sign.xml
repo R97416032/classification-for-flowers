@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6B0AF"
+    tools:context=".activity.Sign"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/radius_drawable_bg"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="用户名       ：" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:onClick="ini"
+                android:padding="5dip"
+                android:textSize="16sp"
+                android:layout_marginStart="10dip" />
+            <ImageView
+                android:id="@+id/ckUser"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+
+                android:text="密    码       ：" />
+
+            <EditText
+                android:id="@+id/pws"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:inputType="textPassword"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:padding="5dip"
+                android:onClick="CheckUser"
+                android:textSize="16sp"
+                android:layout_marginStart="10dip" />
+
+            <ImageView
+                android:id="@+id/ckPws"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="确认密码   ：" />
+            <EditText
+                android:id="@+id/pws1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:inputType="textPassword"
+                android:padding="5dip"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:onClick="CheckPws"
+                android:textSize="16sp"
+                android:layout_marginStart="10dip" />
+            <ImageView
+                android:id="@+id/ckPws1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="APIKEY     ：" />
+            <EditText
+                android:id="@+id/eak"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:onClick="Check"
+                android:clickable="true"
+                android:maxLines="1"
+                android:inputType="text"
+                android:focusableInTouchMode="false"
+                android:padding="5dip"
+                android:textSize="16sp"
+                android:layout_marginStart="10dip" />
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="SecretKey：" />
+            <EditText
+                android:id="@+id/esk"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:maxLines="1"
+                android:inputType="text"
+                android:padding="5dip"
+                android:textSize="16sp"
+                android:layout_marginStart="10dip" />
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <View
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/main_btn_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="2dip"
+            android:text="提交"
+            android:onClick="submit"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:paddingStart="15dip"
+            android:paddingEnd="15dip" />
+        <View
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
